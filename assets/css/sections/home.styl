@@ -10,22 +10,28 @@
   background-repeat: no-repeat
   height 100vh
   display: flex
+  &--center
+    display: flex !important
+    align-items: center
+    height 90vh
+    @media (min-width: $screen-sm-min)
+      display: none !important
 
-.main-welcome__featured-text
+.main-welcome__featured
   background: url('../img/ici/logo.png') no-repeat center center
   background-size contain
   position relative
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height 600px
   width 100%
+  display: flex;
+  align-items: center;
 
+.main-welcome__featured-text
+  justify-content: center;
   p
-    font-size: 12px;
-    margin-top 200px
+    font-size: 11px;
+    margin-top 160px
     max-width: 220px;
-
     @media (min-width: $screen-sm-min)
       font-size: 20px;
       margin-top 270px
@@ -53,7 +59,7 @@
 
 .main-welcome__arrow-down
   position absolute
-  bottom 110px
+  bottom 140px
   @media (min-width: $screen-sm-min)
     bottom 50px
   img
