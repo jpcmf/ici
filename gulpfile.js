@@ -63,7 +63,7 @@ gulp.task('assets', ['clean'], function () {
 // Concat and Uglify Script/Styles in index.html
 gulp.task('html', ['clean', 'assets'], function () {
     return gulp.src('dist/index.html')
-        // .pipe(minifyHTML({empty: true}))
+        .pipe(minifyHTML({empty: true}))
         .pipe(gulp.dest(distFolder));
 });
 
