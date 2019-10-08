@@ -1,0 +1,74 @@
+//
+// modal
+//
+
+.modal-content
+  box-shadow none
+
+.modal--banner .modal-header .close
+.modal--video .modal-header .close
+  background-image url("../img/img-close.png")
+  background-repeat no-repeat
+  background-position center center
+  width 101px
+  height 30px
+  opacity 1
+  position absolute
+  z-index 100
+  margin 20px 30px 0
+  span
+    display none
+
+.modal--video .modal-header .close
+  position relative
+  margin 10px 0px
+
+.modal--dynamic
+  .modal-content
+    border-radius: 0
+    // display: flex
+    // padding-bottom 40px
+    // padding-top 50px
+    h2
+      color #f59b20
+      font-family: Montserrat ,sans-serif;
+      font-size 18px
+      font-weight: 900
+      margin-bottom: 15px
+    p
+      font-size: 14px;
+      padding: 15px 20px 15px 0
+    a
+      transition: opacity 300ms ease
+      opacity 1
+      &:hover
+        opacity .8
+  .modal-body
+    &.row
+      padding-bottom 40px
+      padding-top 50px
+    &__close
+      margin-left 35px
+    &__text2
+      padding 25px
+      ul > li
+        display: flex
+        align-items: flex-start
+      ul > li > i
+        font-size 6px
+        margin-right 5px
+        margin-top 11px
+      span
+        font-weight: 700
+  .modal-header
+    display: flex
+    padding 15px
+    h2
+      color: #fff
+    &__close
+      margin-left auto
+    &--roxo
+      background-color: #945ea4
+    &--azul
+      background-color: #24b5bc
+
