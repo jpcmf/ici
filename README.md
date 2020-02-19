@@ -14,7 +14,7 @@ Instalação - Passo 2
 --------------------------
 
 ```
-cd neodent-gran-morse
+cd ici
 bower install
 npm install
 ```
